@@ -11,10 +11,13 @@ public class Main {
 
 		System.out.println("Ciao bevenuto al calcola il tuo Rettangolo!");
 		System.out.println("Inserisci i parametri del tuo rettangolo:");
-		System.out.println("Inserisci la base: ");
+		System.out.print("Inserisci la base: ");
 		rettangoloUtente.base = scan.nextInt();
-		System.out.println("Inserisci l'altezza: ");
+		System.out.print("Inserisci l'altezza: ");
 		rettangoloUtente.altezza = scan.nextInt();
+
+		System.out.println("L'area del tuo triangolo è " + rettangoloUtente.calcolaarea());
+		System.out.println("Il Perimetro del tuo triangolo è " + rettangoloUtente.calcoloperimetro());
 
 		scan.close();
 	}
